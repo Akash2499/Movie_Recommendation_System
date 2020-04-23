@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Movie Recomendation</title>
+  <meta charset="utf-8">
+  <link rel="icon" href="https://icons.iconarchive.com/icons/iconarchive/red-orb-alphabet/256/Letter-M-icon.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+
+  </style>
+</head>
+<body>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+    	<a class="navbar-brand" href="http://127.0.0.1:8000/">Movie Recomendation</a>
+    </div>
+  </div>
+</nav>
+
+  
+<div class="container text-center">    
+  <h3>Select Algorithm</h3><br>
+  <div class="row">
+    <div class="col-sm-6" style="margin-top:10px;">
+      <a href="http://127.0.0.1:8000/collaborative">
+        <button type="button" class="btn btn-primary" style="width: 80%;height: 100%;">Collaborative</button></a>
+    </div>
+    <div class="col-sm-6" style="margin-top: 10px;"> 
+      <a href="http://127.0.0.1:8000/content">
+        <button type="button" class="btn btn-primary" style="width: 80%;height: 100%;">Content-Based</button></a>
+       
+    </div>
+    
+  </div>
+</div><br>
+<br><br><br>
+<div class="container text-center">
+      {% block content %}
+      {% endblock %}
+</div>
+
+</body>
+</html>
